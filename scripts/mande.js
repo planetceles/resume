@@ -17,24 +17,43 @@ getResumeData();
 const displayResume = (resume) => {
     resume.forEach((details) => {
         let resumePaper = document.createElement("section");
-        let resumeName = document.createElement("h2");
+        let resumeCall = document.createElement("div");
+
+        let resumeName = document.createElement("h1");
         let resumeEmail = document.createElement("p");
         let resumePhone = document.createElement("p");
         let resumeLinkedIn = document.createElement("p");
         let resumeAddress = document.createElement("p");
         let resumeTitle = document.createElement("p");
         let resumeSummary = document.createElement("p");
-        let resumeSkills = document.createElement("ul");
+        let resumeSkillTitle = document.createElement("p");
+        let resumeSkillPartOne = document.createElement("ul");
+        let resumeSkillPartTwo = document.createElement("ul");
+        let resumeExperienceTitle = document.createElement("p");
         let resumeExperience = document.createElement("div");
         // let resumeResponsibilities = document.createElement("ul");
+        let resumeEducationTitle = document.createElement("p");
         let resumeEducation = document.createElement("ul");
 
+        
         resumePaper.classList.add("resume-card");
+        resumeCall.classList.add("email-phone");
+        resumeName.classList.add("title-center");
+        resumeEmail.classList.add("title-center");
+        resumePhone.classList.add("title-center");
+        resumeLinkedIn.classList.add("title-center");
+        resumeAddress.classList.add("title-center", "address");
+        resumeTitle.classList.add("title-resume");
 
-        details.skills.forEach(skill => {
+        details.skillPartOne.forEach(skill => {
             let skillList = document.createElement("li");
             skillList.textContent = skill;
-            resumeSkills.appendChild(skillList);
+            resumeSkillPartOne.appendChild(skillList);
+        });
+        details.skillPartTwo.forEach(skill => {
+            let skillList = document.createElement("li");
+            skillList.textContent = skill;
+            resumeSkillPartTwo.appendChild(skillList);
         });
         details.experience.forEach(expert => {
             let experienceBlock = document.createElement("div");
@@ -86,17 +105,28 @@ const displayResume = (resume) => {
         resumeAddress.textContent = `${details.address}`;
         resumeTitle.textContent = `${details.title}`;
         resumeSummary.textContent = `${details.summary}`;
+        resumeSkillTitle.textContent = `${details.skill}`;
+        resumeExperienceTitle.textContent = `${details.experienceTitle}`;
+        resumeEducationTitle.textContent = `${details.educationTitle}`;
+
+        resumeCall.appendChild(resumeEmail);
+        resumeCall.appendChild(resumePhone);
 
         resumePaper.appendChild(resumeName);
-        resumePaper.appendChild(resumeEmail);
-        resumePaper.appendChild(resumePhone);
+        resumePaper.appendChild(resumeCall);
+        // resumePaper.appendChild(resumeEmail);
+        // resumePaper.appendChild(resumePhone);
         resumePaper.appendChild(resumeLinkedIn);
         resumePaper.appendChild(resumeAddress);
         resumePaper.appendChild(resumeTitle);
         resumePaper.appendChild(resumeSummary);
-        resumePaper.appendChild(resumeSkills);
+        resumePaper.appendChild(resumeSkillTitle);
+        resumePaper.appendChild(resumeSkillPartOne);
+        resumePaper.appendChild(resumeSkillPartTwo);
+        resumePaper.appendChild(resumeExperienceTitle);
         resumePaper.appendChild(resumeExperience);
         // resumePaper.appendChild(resumeResponsibilities);
+        resumePaper.appendChild(resumeEducationTitle);
         resumePaper.appendChild(resumeEducation);
 
         resumeData.appendChild(resumePaper);

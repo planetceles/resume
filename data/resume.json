@@ -9,14 +9,18 @@
             "address": "Ridgeway, Johannesburg South 2091",
             "title": "Professional Summary",
             "summary": "I am a detail-oriented and highly accurate professional with strong experience in administrative support, student services, data processing, and information management. I am skilled in entering, validating, and organizing large volumes of data with exceptional attention to detail. Adept at working with digital tools, spreadsheets, insurance portals, and content management systems. Known for strong communication skills, professionalism, and the ability to follow instructions while meeting strict deadlines. I bring experience from educational administration, data review, and analytics environments.",
-            "skills": [
+            "skill": "Skills",
+            "skillPartOne": [
                 "Accuracy & Attention to Detail",
                 "Technology Savvy (Web Portals, Sheets, Forms)",
-                "Time & Task Management",
+                "Time & Task Management"
+            ],
+            "skillPartTwo": [
                 "Quality Orientation & Problem Solving",
                 "Team Collaboration & Professional Development",
                 "Following Directions with Precision"
             ],
+            "experienceTitle": "Experience",
             "experience": [
                 {
                     "position": "Registration & Graduation Agent",
@@ -59,6 +63,7 @@
                     ]
                 }
             ],
+            "educationTitle": "Education",
             "education": [
                 {
                     "degree": "Bachelor’s degree in software development",
