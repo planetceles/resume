@@ -57,18 +57,21 @@ const displayResume = (resume) => {
             let educationInstitution = document.createElement("p");
             let educationSkills = document.createElement("p");
 
-            educated.skills.forEach(skill => {
-                let eduSkillList = document.createElement("span");
-                eduSkillList.textContent = skill;
-                educationSkills.appendChild(eduSkillList);
-            });
-            educated.institution.forEach(inst => {
-                let institutionList = document.createElement("span");
-                institutionList.textContent = inst;
-                educationInstitution.appendChild(institutionList);
-            });
+            // educated.skills.forEach(skill => {
+            //     let eduSkillList = document.createElement("span");
+            //     eduSkillList.textContent = skill;
+            //     educationSkills.appendChild(eduSkillList);
+            // });
+            educationSkills.textContent = `${educated.skills.join(", ")}`;
+
+            // educated.institution.forEach(inst => {
+            //     let institutionList = document.createElement("span");
+            //     institutionList.textContent = inst;
+            //     educationInstitution.appendChild(institutionList);
+            // });
             // educationList.textContent = educated;
             educationTitle.textContent = `${educated.degree} | (${educated.duration})`;
+            educationInstitution.textContent = `${educated.institution}`;
 
             educationBlock.appendChild(educationTitle);
             educationBlock.appendChild(educationInstitution);
