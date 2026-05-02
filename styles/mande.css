@@ -13,6 +13,8 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
     padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     h1 {
         padding-bottom: .7rem;
