@@ -62,13 +62,17 @@
             "education": [
                 {
                     "degree": "Bachelor’s degree in software development",
-                    "institution": "Brigham Young University-Idaho",
+                    "institution": [
+                        "Brigham Young University-Idaho"
+                    ],
                     "duration": "In Progress",
                     "skills": []
                 },
                 {
-                    "degree": "Bachelor’s degree in software development",
-                    "institution": "Acee10X",
+                    "degree": "Data Analytics Certificate",
+                    "institution": [
+                        "Acee10X"
+                    ],
                     "duration": "Completed April 2025",
                     "skills": [
                         "Excel",
@@ -80,7 +84,9 @@
                 },
                 {
                     "degree": "PathwayConnect Certificate",
-                    "institution": "BYU-Pathway Worldwide",
+                    "institution": [
+                        "BYU-Pathway Worldwide"
+                    ],
                     "duration": "Completed 2024",
                     "skills": []
                 }
