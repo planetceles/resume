@@ -34,8 +34,47 @@ body {
 .address {
     margin-bottom: 1rem;
 }
-.title-resume {
+.title-resume,
+.skill-title,
+.experience-title,
+.education-title {
     /* color: red; */
     margin-bottom: .8rem;
     font-weight: bold;
+}
+.summary,
+.experience,
+.institution {
+    margin-bottom: 1rem;
+    /* color: red; */
+    line-height: 1.3rem;
+}
+.skill-card {
+    /* color: red; */
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    line-height: 1.3rem;
+}
+.responsibility-list,
+.education {
+    /* color: red; */
+    margin-left: 2.3rem;
+    padding-bottom: 1rem;
+}
+.position-duration,
+.education-period {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .3rem;
+}
+.period {
+    font-style: italic;
+}
+.education-block {
+    /* color: red; */
+    line-height: 1rem;
+}
+.education-skills {
+    margin-bottom: 1rem;
 }
